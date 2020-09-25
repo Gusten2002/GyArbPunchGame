@@ -5,9 +5,9 @@ using UnityEngine;
 public class SmallEnemieScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int smallDudeHp = 20;
     void Start()
     {
-        int smallDudeHp = 20;
         
     }
 
