@@ -16,7 +16,7 @@ public class SmallEnemieScript : MonoBehaviour
     {
         if (smallDudeHp <= 0)
         {
-            Destroy(This.GameObject);
+            Destroy(GameObject);
         }
     }
 }
