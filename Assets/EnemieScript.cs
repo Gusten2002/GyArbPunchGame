@@ -16,7 +16,7 @@ public class EnemieScript : MonoBehaviour
     {
         if (BossHp <= 0)
         {
-            Destroy(GameObject);
+            Destroy(gameObject);
         }
     }
 }
