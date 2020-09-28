@@ -7,17 +7,16 @@ public class MediumButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Random generator = new Random();
         int attack = 6;
-        int attackChance = generator.Next(10);
+        // int attackChance = Random.Range(10);
 
-        for (int i = 0; i < 10; i + 2)
-        {
-            if (attackChance == i)
-            {
+        // for (int i = 0; i < 10; i + 2)
+        // {
+        //     if (attackChance == i)
+        //     {
                 
-            }
-        }
+        //     }
+        // }
 
     }
 

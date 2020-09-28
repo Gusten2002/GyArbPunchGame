@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemieScript : MonoBehaviour
+public class MediumScriptHandler : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int BossHp = 20;
     void Start()
     {
         
@@ -14,9 +13,13 @@ public class EnemieScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BossHp <= 0)
-        {
-            Destroy(gameObject);
-        }
+        
     }
+    
+    public void Thing() {
+        Debug.Log("hey");
+
+        
+    }
+
 }
