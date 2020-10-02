@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemieScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int BossHp = 20;
+    public int BossHp = 100;
     void Start()
     {
         
