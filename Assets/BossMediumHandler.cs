@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LowScriptHandler : MonoBehaviour
+public class BossMediumHandler : MonoBehaviour
 {
     // Start is called before the first frame update
-    SmallEnemieScript smallEnemieScript = new SmallEnemieScript();
+    
+    EnemieScript enemieScript = new EnemieScript();
     void Start()
     {
-        smallEnemieScript = GameObject.Find("LittleMan").GetComponent<SmallEnemieScript>();
+        enemieScript = GameObject.Find("BigMan").GetComponent<EnemieScript>();
     }
 
     // Update is called once per frame
@@ -23,10 +24,10 @@ public class LowScriptHandler : MonoBehaviour
 
         
         
-        if (hitChance > 0)
+        if (hitChance > 50)
         {
-            smallEnemieScript.smallDudeHp -= 5;
-            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/100 health left");
+            enemieScript.BossHp -= 15;
+            Debug.Log("The boss has " + enemieScript.BossHp + "/100 health left");
         }
         else
         {
@@ -36,4 +37,3 @@ public class LowScriptHandler : MonoBehaviour
         
     }
 }
-

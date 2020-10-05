@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/BigBoss.unity
+    guid: 977860ff15791c14eb44cf2c9d1509d5
   m_configObjects: {}

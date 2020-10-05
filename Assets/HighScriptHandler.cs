@@ -7,10 +7,10 @@ public class HighScriptHandler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    EnemieScript enemieScript = new EnemieScript();
+    SmallEnemieScript smallEnemieScript = new SmallEnemieScript();
     void Start()
     {
-        
+        smallEnemieScript = GameObject.Find("LittleMan").GetComponent<SmallEnemieScript>();
     }
 
     // Update is called once per frame
@@ -25,10 +25,14 @@ public class HighScriptHandler : MonoBehaviour
 
         
         
-        if (hitChance > 80)
+        if (hitChance > 87)
         {
-            enemieScript.BossHp -= 50;
-            Debug.Log("The boss has " + enemieScript.BossHp + "/100 health left");
+            smallEnemieScript.smallDudeHp -= 50;
+            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/100 health left");
+        }
+        else
+        {
+            Debug.Log("You missed");
         }
 
         
