@@ -449,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 4809436810456595410, guid: 16536c0a9d035cc4aaee035f8be1ac48,
         type: 3}
       propertyPath: smallDudeHp
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8411404694988568653, guid: 16536c0a9d035cc4aaee035f8be1ac48,
         type: 3}
@@ -806,8 +806,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 6873384275092487402, guid: 3eb358f264588fb4f9c889a66f35122a,
     type: 3}
-  width: 4
-  height: 5
+  width: 5
+  height: 4
 --- !u!4 &1093428416
 Transform:
   m_ObjectHideFlags: 0
@@ -816,7 +816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093428414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.63, y: 4.09, z: -13.317355}
+  m_LocalPosition: {x: -9.84, y: 3.95, z: -13.317355}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

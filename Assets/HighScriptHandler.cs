@@ -22,13 +22,14 @@ public class HighScriptHandler : MonoBehaviour
     public void Thing() 
     {
         int hitChance = Random.Range(0, 100);
-
+        smallEnemieScript.hitCounter++;
+        smallEnemieScript.whatAttack += 3;
         
         
         if (hitChance > 87)
         {
-            smallEnemieScript.smallDudeHp -= 50;
-            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/100 health left");
+            smallEnemieScript.smallDudeHp -= 10;
+            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
         }
         else
         {

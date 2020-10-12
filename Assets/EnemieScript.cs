@@ -5,7 +5,9 @@ using UnityEngine;
 public class EnemieScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int BossHp = 100;
+    public int hitCounter;
+    public int whatAttack;
+    public int BossHp = 20;
     void Start()
     {
         
@@ -16,8 +18,9 @@ public class EnemieScript : MonoBehaviour
     {
         if (BossHp <= 0)
         {
+            Debug.Log("hit counter " + hitCounter + "\nWhat attack " + whatAttack);
             Destroy(gameObject);
-            
         }
+            HeartManager.instance.SetVisibleHearts(BossHp);
     }
 }

@@ -20,13 +20,14 @@ public class LowScriptHandler : MonoBehaviour
     public void Thing() 
     {
         int hitChance = Random.Range(0, 100);
-
+        smallEnemieScript.hitCounter++;
+        smallEnemieScript.whatAttack += 1;
         
         
         if (hitChance > 0)
         {
-            smallEnemieScript.smallDudeHp -= 5;
-            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/100 health left");
+            smallEnemieScript.smallDudeHp -= 1;
+            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
         }
         else
         {

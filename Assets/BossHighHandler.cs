@@ -21,13 +21,15 @@ public class BossHighHandler : MonoBehaviour
     public void Thing() 
     {
         int hitChance = Random.Range(0, 100);
+        enemieScript.hitCounter++;
+        enemieScript.whatAttack += 3;
 
         
         
         if (hitChance > 87)
         {
-            enemieScript.BossHp -= 50;
-            Debug.Log("The boss has " + enemieScript.BossHp + "/100 health left");
+            enemieScript.BossHp -= 10;
+            Debug.Log("The boss has " + enemieScript.BossHp + "/20 health left");
         }
         else
         {
