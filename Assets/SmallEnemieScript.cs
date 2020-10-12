@@ -9,7 +9,7 @@ public class SmallEnemieScript : MonoBehaviour
     public int smallDudeHp = 100;
     void Start()
     {
-        
+        HeartManager.instance.SetVisibleHearts(10);
     }
 
     // Update is called once per frame
