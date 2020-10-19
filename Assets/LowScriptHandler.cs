@@ -27,7 +27,7 @@ public class LowScriptHandler : MonoBehaviour
         if (hitChance > 0)
         {
             smallEnemieScript.smallDudeHp -= 1;
-            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
+            //Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
         }
         else
         {

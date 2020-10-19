@@ -29,7 +29,7 @@ public class BossHighHandler : MonoBehaviour
         if (hitChance > 87)
         {
             enemieScript.BossHp -= 10;
-            Debug.Log("The boss has " + enemieScript.BossHp + "/20 health left");
+            // Debug.Log("The boss has " + enemieScript.BossHp + "/20 health left");
         }
         else
         {

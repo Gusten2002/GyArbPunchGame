@@ -27,7 +27,7 @@ public class MediumScriptHandler : MonoBehaviour
         if (hitChance > 50)
         {
             smallEnemieScript.smallDudeHp -= 3;
-            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
+            //Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
         }
         else
         {

@@ -29,7 +29,7 @@ public class HighScriptHandler : MonoBehaviour
         if (hitChance > 87)
         {
             smallEnemieScript.smallDudeHp -= 10;
-            Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
+            //Debug.Log("The boss has " + smallEnemieScript.smallDudeHp + "/20 health left");
         }
         else
         {

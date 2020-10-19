@@ -29,7 +29,7 @@ public class BossMediumHandler : MonoBehaviour
         if (hitChance > 50)
         {
             enemieScript.BossHp -= 3;
-            Debug.Log("The boss has " + enemieScript.BossHp + "/20 health left");
+            // Debug.Log("The boss has " + enemieScript.BossHp + "/20 health left");
         }
         else
         {
