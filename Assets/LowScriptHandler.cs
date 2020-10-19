@@ -20,8 +20,8 @@ public class LowScriptHandler : MonoBehaviour
     public void Thing() 
     {
         int hitChance = Random.Range(0, 100);
-        smallEnemieScript.hitCounter++;
-        smallEnemieScript.whatAttack += 1;
+        SmallEnemieScript.hitCounter++;
+        SmallEnemieScript.whatAttack += 1;
         
         
         if (hitChance > 0)

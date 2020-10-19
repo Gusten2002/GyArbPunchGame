@@ -22,8 +22,8 @@ public class HighScriptHandler : MonoBehaviour
     public void Thing() 
     {
         int hitChance = Random.Range(0, 100);
-        smallEnemieScript.hitCounter++;
-        smallEnemieScript.whatAttack += 3;
+        SmallEnemieScript.hitCounter++;
+        SmallEnemieScript.whatAttack += 3;
         
         
         if (hitChance > 87)

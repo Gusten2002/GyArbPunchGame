@@ -20,8 +20,8 @@ public class MediumScriptHandler : MonoBehaviour
     public void Thing() 
     {
         int hitChance = Random.Range(0, 100);
-        smallEnemieScript.hitCounter++;
-        smallEnemieScript.whatAttack += 2;
+        SmallEnemieScript.hitCounter++;
+        SmallEnemieScript.whatAttack += 2;
         
         
         if (hitChance > 50)
