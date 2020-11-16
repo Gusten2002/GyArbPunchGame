@@ -19,8 +19,8 @@ public class EnemieScript : MonoBehaviour
     {
         if (BossHp <= 0)
         {
-            Debug.Log("Small Boss: hit counter " + SmallEnemieScript.hitCounter + "\nWhat attack " + SmallEnemieScript.whatAttack);
-            Debug.Log("Big Boss: hit counter " + hitCounter + "\nWhat attack " + whatAttack);
+            Debug.Log("Small Boss: hit counter " + SmallEnemieScript.hitCounter + "\nwhat attack " + SmallEnemieScript.whatAttack);
+            Debug.Log("Big Boss: hit counter " + hitCounter + "\nwhat attack " + whatAttack);
             Destroy(gameObject);
         }
         HeartManager.instance.SetVisibleHearts(BossHp);
